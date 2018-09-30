@@ -1,0 +1,417 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>octave命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="octave控制语句和函数.html" />
+    
+    
+    <link rel="prev" href="线性回归算法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="线性回归算法.html">
+            
+                <a href="线性回归算法.html">
+            
+                    
+                    线性回归算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="octave命令.html">
+            
+                <a href="octave命令.html">
+            
+                    
+                    octave命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="octave控制语句和函数.html">
+            
+                <a href="octave控制语句和函数.html">
+            
+                    
+                    octave控制语句和函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="逻辑回归.html">
+            
+                <a href="逻辑回归.html">
+            
+                    
+                    逻辑回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >octave命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="octave&#x5E38;&#x7528;&#x547D;&#x4EE4;">octave&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
+<ol>
+<li><p>&#x57FA;&#x672C;&#x7684;&#x6570;&#x5B66;&#x8FD0;&#x7B97;</p>
+<pre><code class="lang-octave{.line-numbers}">3+4
+5-1
+4*4
+6/2
+2^6
+</code></pre>
+</li>
+<li><p>&#x6CE8;&#x91CA;
+%<br>&gt;</p>
+</li>
+<li><p>&#x53D8;&#x91CF;</p>
+<pre><code class="lang-octave{.line-numbers}">a=1 % &#x4F1A;&#x81EA;&#x52A8;&#x663E;&#x793A;&#x8D4B;&#x503C;&#x7ED3;&#x679C;
+a=1; % &#x6291;&#x5236;&#x6253;&#x5370;&#xFF0C;&#x4E0D;&#x663E;&#x793A;&#x8D4B;&#x503C;&#x7ED3;&#x679C;
+a % &#x6253;&#x5370;&#x53D8;&#x91CF;
+</code></pre>
+</li>
+<li><p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;</p>
+<pre><code class="lang-octave{.line-numbers}">1==2 % &#x7ED3;&#x679C;&#x4E3A;0&#xFF0C;&#x8868;&#x793A;&#x4E3A;&#x5047;
+1~=2 % &#x7ED3;&#x679C;&#x4E3A;1&#xFF0C;&#x8868;&#x793A;&#x4E3A;&#x771F;&#xFF0C;&#x5176;&#x4ED6;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#x4E00;&#x822C;&#x7528;&apos;!=&apos;
+1 &amp;&amp; 0 % &#x903B;&#x8F91;&#x4E0E;&#x8FD0;&#x7B97;&#xFF0C;ans=0
+1 || 0 % &#x903B;&#x8F91;&#x6216;&#x8FD0;&#x7B97;&#xFF0C;ans=1
+xor(1,0) % &#x5F02;&#x6216;&#x8FD0;&#x7B97;&#xFF0C;ans=1
+</code></pre>
+</li>
+<li><p>&#x66F4;&#x6539;&#x547D;&#x4EE4;&#x884C;&#x63D0;&#x793A;&#x7B26;</p>
+<pre><code class="lang-octave{.line-numbers}">PS1(&apos;&gt;&gt; &apos;)
+</code></pre>
+</li>
+<li><p>&#x590D;&#x6742;&#x7684;&#x5C4F;&#x5E55;&#x8F93;&#x51FA;</p>
+<pre><code class="lang-octave{.line-numbers}">disp(a); % &#x6253;&#x5370;a
+disp(sprintf(&apos;2 decimals?: % 0.2f&apos;,a));% &#x6253;&#x5370;a&#xFF0C;&#x4FDD;&#x7559;&#x4E24;&#x4F4D;&#x5C0F;&#x6570;
+</code></pre>
+</li>
+<li><p>&#x63A7;&#x5236;&#x957F;&#x77ED;&#x683C;&#x5F0F;&#x7684;&#x5FEB;&#x6377;&#x547D;&#x4EE4;</p>
+<pre><code class="lang-octave{.line-numbers}">format long % long&#x7C7B;&#x578B;&#x957F;&#x5EA6;
+format short % short&#x7C7B;&#x578B;&#x957F;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x7C7B;&#x578B;
+</code></pre>
+</li>
+<li><p>&#x77E9;&#x9635;</p>
+<pre><code class="lang-octave{.line-numbers}">A = [1 2; 3 4; 5 6] % &#x5EFA;&#x7ACB;3*2&#x7684;&#x77E9;&#x9635;
+A = [1 2 3] % &#x5EFA;&#x7ACB;1*3&#x7684;&#x884C;&#x5411;&#x91CF;
+A = [1; 2; 3;] % &#x5EFA;&#x7ACB;1=3*1&#x7684;&#x5217;&#x5411;&#x91CF;
+ones(2,3) % &#x751F;&#x6210;&#x5143;&#x7D20;&#x90FD;&#x4E3A;1&#x7684;2*3&#x7684;&#x77E9;&#x9635;
+2*ones(2,3) % &#x751F;&#x6210;&#x5143;&#x7D20;&#x90FD;&#x4E3A;2&#x7684;2*3&#x7684;&#x77E9;&#x9635;
+zeros(1,3) % &#x751F;&#x6210;&#x5143;&#x7D20;&#x90FD;&#x4E3A;0&#x7684;1*3&#x7684;&#x77E9;&#x9635;
+rand(1,3) % &#x751F;&#x6210;&#x5143;&#x7D20;&#x4E3A;&#x968F;&#x673A;&#x503C;&#x7684;1*3&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x968F;&#x673A;&#x503C;&#x4ECB;&#x4E8E;0~1
+randn(1,3) % &#x751F;&#x6210;&#x7684;1*3&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x4E09;&#x4E2A;&#x503C;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x5E73;&#x5747;&#x503C;&#x4E3A;0&#x6216;&#x8005;&#x6807;&#x51C6;&#x504F;&#x5DEE;&#x4E3A;&#x7684;&#x9AD8;&#x65AF;&#x5206;&#x5E03;
+eye(4) % &#x5EFA;&#x7ACB;4*4&#x5355;&#x4F4D;&#x77E9;&#x9635;
+size(A) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x7684;&#x5927;&#x5C0F;
+size(A,1) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x7B2C;&#x4E00;&#x4E2A;&#x7EAC;&#x5EA6;&#x7684;&#x5927;&#x5C0F;
+size(A,2) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x7B2C;&#x4E8C;&#x4E2A;&#x7EAC;&#x5EA6;&#x7684;&#x5927;&#x5C0F;
+length(A) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x6700;&#x5927;&#x7EAC;&#x5EA6;&#x7684;&#x5927;&#x5C0F;(&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x5411;&#x91CF;)
+A(2,:) % &#x6253;&#x5370;A&#x77E9;&#x9635;&#x7B2C;2&#x884C;&#x6240;&#x6709;&#x5143;&#x7D20;
+A([1 3], :) % &#x53D6;A&#x77E9;&#x9635;&#x7B2C;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x503C;&#x4E3A;1&#x548C;3&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;
+A(:,2)=[10; 11; 12] % &#x5C06;&#x65B0;&#x7684;&#x5217;&#x5411;&#x91CF;&#x8D4B;&#x7ED9;&#x77E9;&#x9635;&#x7684;&#x7B2C;2&#x5217;
+A=[A,[100;101;102]] % &#x7ED9;A&#x9644;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5217;&#x77E9;&#x9635;
+A(:) % &#x5C06;A&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x653E;&#x5165;&#x4E00;&#x4E2A;&#x5217;&#x5411;&#x91CF;
+C=[A B] % &#x5C06;&#x77E9;&#x9635;A&#x548C;B&#x8FDE;&#x5728;&#x4E00;&#x8D77;(&#x5DE6;&#x53F3;&#x6392;&#x5217;)
+C=[A, B] % &#x5C06;&#x77E9;&#x9635;A&#x548C;B&#x8FDE;&#x5728;&#x4E00;&#x8D77;(&#x5DE6;&#x53F3;&#x6392;&#x5217;)
+C=[A; B] % &#x5C06;&#x77E9;&#x9635;A&#x548C;B&#x8FDE;&#x5728;&#x4E00;&#x8D77;(&#x4E0A;&#x4E0B;&#x6392;&#x5217;)
+</code></pre>
+</li>
+<li><p>&#x5176;&#x4ED6;&#x7B26;&#x53F7;</p>
+<pre><code class="lang-octave{.line-numbers}">1:0.1:2 % &#x5F97;&#x5230;&#x4ECE;&#x6570;&#x503C;1&#x5F00;&#x59CB;&#xFF0C;&#x6B65;&#x957F;&#x4E3A;0.1&#xFF0C;&#x76F4;&#x5230;&#x589E;&#x52A0;&#x5230;2&#x7684;&#x4E00;&#x7EC4;&#x884C;&#x5411;&#x91CF;
+1:6 % &#x5F97;&#x5230; 1 2 3 4 5 6 &#x8FD9;&#x6837;&#x7684;&#x884C;&#x5411;&#x91CF;
+</code></pre>
+</li>
+<li><p>&#x7ED8;&#x5236;&#x56FE;&#x5F62;</p>
+<pre><code class="lang-octave{.line-numbers}">hist(w) % &#x7ED8;&#x5236;w&#x7684;&#x76F4;&#x65B9;&#x56FE;
+hist(w,50) % &#x7ED8;&#x5236;50&#x6761;w&#x7684;&#x76F4;&#x65B9;&#x56FE;
+plot(x,y) %  x&#x5411;&#x91CF;&#x4E3A;x&#x8F74;&#x53D6;&#x503C;&#xFF0C;y&#x5411;&#x91CF;&#x4E3A;y&#x8F74;&#x53D6;&#x503C;
+xlabel(&quot;xxx&quot;) % x&#x8F74;&#x540D;&#x5B57;
+ylabel(&quot;xxx&quot;) % y&#x8F74;&#x540D;&#x5B57;
+hold on % &#x5C06;&#x540E;&#x7EED;&#x56FE;&#x53E0;&#x52A0;&#x753B;&#x5728;&#x524D;&#x4E00;&#x5E45;&#x56FE;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8986;&#x76D6;
+title(&quot;xxx&quot;) % &#x56FE;&#x7684;&#x6807;&#x9898;
+legend(&quot;line1&quot;,&quot;line2&quot;) % &#x6807;&#x8BB0;&#x56FE;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x6761;&#x7EBF;&#x7684;&#x540D;&#x5B57;
+print -dpng &quot;xxx.png&quot; % &#x4FDD;&#x5B58;&#x6210;png&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;
+close % &#x5173;&#x95ED;&#x56FE;&#x50CF;
+figure(1); plot(x,y) % &#x7ED9;&#x56FE;&#x50CF;&#x7F16;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x663E;&#x793A;&#x591A;&#x4E2A;&#x56FE;&#x6848;
+subplot(m,n,i) % &#x5C06;&#x56FE;&#x50CF;&#x5212;&#x5206;&#x4E3A;m*n&#x4E2A;&#x683C;&#x5B50;&#x3002;&#x4F7F;&#x7528;&#x7B2C;i&#x4E2A;&#x4F5C;&#x56FE;
+axis([-1 1 -1 1])&#x8C03;&#x6574;&#x8F74;&#x5750;&#x6807;&#x8303;&#x56F4;&#xFF0C;x&#x8F74;&#x548C;y&#x8F74;&#x4E3A;-1&#x5230;1
+</code></pre>
+</li>
+<li><p>&#x5E2E;&#x52A9;&#x547D;&#x4EE4;</p>
+<pre><code class="lang-octave{.line-numbers}">help eye % &#x663E;&#x793A;eye&#x51FD;&#x6570;&#x7684;&#x5E2E;&#x52A9;
+</code></pre>
+</li>
+<li><p>&#x5176;&#x4ED6;&#x547D;&#x4EE4;</p>
+<pre><code class="lang-octave{.line-numbers}">pwd % &#x663E;&#x793A;octave&#x6240;&#x5728;&#x76EE;&#x5F55;
+ls % &#x5217;&#x51FA;&#x6240;&#x6709;&#x8DEF;&#x5F84; 
+cd xxx % &#x6539;&#x53D8;&#x76EE;&#x5F55;
+load xx.dat % &#x52A0;&#x8F7D;&#x6587;&#x4EF6;
+who % &#x663E;&#x793A;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;
+whos % &#x663E;&#x793A;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x53CA;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;
+clear A % &#x6E05;&#x9664;&#x53D8;&#x91CF;A
+v=price(1:10) % &#x5C06;&#x5217;&#x5411;&#x91CF;price&#x7684;&#x524D;10&#x4E2A;&#x5143;&#x7D20;&#x5B58;&#x5165;v&#x4E2D;
+save hello.mat v; % &#x5C06;v&#x5B58;&#x5165;&#x5230;hello.mat&#x6587;&#x4EF6;
+exit(quit) % &#x9000;&#x51FA;octave
+</code></pre>
+</li>
+<li>&#x6570;&#x636E;&#x8FD0;&#x7B97;<pre><code class="lang-octave{.line-numbers}">A*C % &#x77E9;&#x9635;A&#x548C;B&#x76F8;&#x4E58;
+A.*B % &#x5C06;&#x77E9;&#x9635;A&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4E0E;&#x77E9;&#x9635;B&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x76F8;&#x4E58;(.&#x8868;&#x793A;&#x4F4D;&#x8FD0;&#x7B97;)
+A.^2 % &#x5C06;&#x77E9;&#x9635;A&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5E73;&#x65B9;
+1./A % &#x5C06;&#x77E9;&#x9635;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5012;&#x6570;&#x8FD0;&#x7B97;
+log(A) % &#x5BF9;&#x77E9;&#x9635;A&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6C42;&#x5BF9;&#x6570;
+exp(A) % &#x5BF9;&#x77E9;&#x9635;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x4EE5;e&#x4E3A;&#x5E95;&#x5143;&#x7D20;&#x4E3A;&#x5E42;&#x7684;&#x8FD0;&#x7B97;
+abs(A) % &#x5BF9;&#x77E9;&#x9635;A&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6C42;&#x7EDD;&#x5BF9;&#x503C;
+-A % &#x5BF9;&#x77E9;&#x9635;A&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6C42;&#x76F8;&#x53CD;&#x6570;
+A+1 % &#x77E9;&#x9635;A&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;+1
+A&apos; % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x7684;&#x8F6C;&#x7F6E;
+max(rand(3),rand(3)) % &#x5F97;&#x5230;&#x4E24;&#x4E2A;&#x968F;&#x673A;&#x7684;3*3&#x77E9;&#x9635;&#xFF0C;&#x9010;&#x5143;&#x7D20;&#x6BD4;&#x8F83;&#x53D6;&#x8F83;&#x5927;&#x503C;&#xFF0C;&#x518D;&#x8FD4;&#x56DE;&#x65B0;&#x7684;&#x77E9;&#x9635;
+max(A) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x6BCF;&#x5217;&#x6700;&#x5927;&#x7684;&#x5143;&#x7D20;
+max(A,[],1) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x6BCF;&#x5217;&#x6700;&#x5927;&#x7684;&#x5143;&#x7D20;
+max(A,[],2) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x6BCF;&#x884C;&#x6700;&#x5927;&#x7684;&#x5143;&#x7D20;
+max(max(A)) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x6700;&#x5927;&#x5143;&#x7D20;
+max(A(:)) % &#x8FD4;&#x56DE;&#x77E9;&#x9635;A&#x6700;&#x5927;&#x5143;&#x7D20;
+[val,ind]=max(A) % &#x5C06;&#x5411;&#x91CF;A&#x7684;&#x6700;&#x5927;&#x503C;&#x548C;&#x7D22;&#x5F15;&#x5B58;&#x5165;val&#x548C;ind
+a&lt;3 % &#x9010;&#x5143;&#x7D20;&#x5224;&#x65AD;&#xFF0C;&#x82E5;&#x4E3A;&#x771F;&#x5219;&#x4E3A;1
+find(a&lt;3&gt; % &#x83B7;&#x5F97;a&#x4E2D;&#x5C0F;&#x4E8E;3&#x7684;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;)
+magic(3) % &#x521B;&#x5EFA;&#x4E00;&#x4E2A;3*3&#x7684;&#x9B54;&#x65B9;&#x9635;
+[r,c]=find(A&gt;=7) % &#x627E;&#x5230;&#x77E9;&#x9635;A&#x5927;&#x4E8E;&#x7B49;&#x4E8E;7&#x7684;&#x5143;&#x7D20;&#xFF0C;r:=&#x884C;&#x7684;&#x7D22;&#x5F15;&#xFF0C;c:=&#x5217;&#x7684;&#x7D22;&#x5F15;
+sum(A) % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x6240;&#x6709;&#x5143;&#x7D20;&#x7684;&#x548C;
+sum(A,1) % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x6BCF;&#x5217;&#x7684;&#x548C;
+sum(A,2) % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x6BCF;&#x884C;&#x7684;&#x548C;
+sum(sum(A.*eye(9))) % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x5BF9;&#x89D2;&#x7EBF;&#x7684;&#x548C;&#xFF0C;A&#x662F;9*9&#x77E9;&#x9635;
+sum(sum(A.*flipud(eye(9))) % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x526F;&#x5BF9;&#x89D2;&#x7EBF;&#x7684;&#x548C;&#xFF0C;A&#x662F;9*9&#x77E9;&#x9635;
+prod(A) % &#x5F97;&#x5230;&#x77E9;&#x9635;A&#x6240;&#x6709;&#x5143;&#x7D20;&#x7684;&#x4E58;&#x79EF;
+floor(A) % &#x5C06;&#x77E9;&#x9635;A&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5316;&#x6574;
+flipud(A) % &#x5C06;&#x77E9;&#x9635;A&#x4E0A;&#x4E0B;&#x7FFB;&#x8F6C;
+prinv(A) % &#x5BF9;&#x77E9;&#x9635;A&#x6C42;&#x9006;&#xFF0C;&#x82E5;&#x6CA1;&#x6709;&#x9006;&#xFF0C;&#x6C42;&#x5F97;&#x5219;&#x662F;&#x4F2A;&#x9006;&#x77E9;&#x9635;
+</code></pre>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="线性回归算法.html" class="navigation navigation-prev " aria-label="Previous page: 线性回归算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="octave控制语句和函数.html" class="navigation navigation-next " aria-label="Next page: octave控制语句和函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"octave命令","level":"1.3","depth":1,"next":{"title":"octave控制语句和函数","level":"1.4","depth":1,"path":"chapter/octave控制语句和函数.md","ref":"chapter/octave控制语句和函数.md","articles":[]},"previous":{"title":"线性回归算法","level":"1.2","depth":1,"path":"chapter/线性回归算法.md","ref":"chapter/线性回归算法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/octave命令.md","mtime":"2018-09-28T14:44:16.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-30T10:24:20.183Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
